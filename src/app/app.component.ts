@@ -15,6 +15,7 @@ export class AppComponent {
   }
 
   onSelect(id: number): void {
-    // write implmentaion here
+    var myTodo = this.service.getTodoById(id);
+    console.log(myTodo)
   }
 }

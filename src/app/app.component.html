@@ -8,11 +8,12 @@
 <div style="text-align:center">
   <table>
     <thead>
-        <th>TODOS</th>
+        <th>TODOS: Click the todo to see details in the log. Delete the todo by pressing delete. Refresh the page to restore deleted todos.</th>
     </thead>
     <tbody>
         <tr *ngFor="let todo of todos">
-            <a href="#" (click)=onSelect(todo.id)>{{todo.name}}</a>
+            <a href="#" (click)=onSelect(todo.id)>{{todo.name}}</a>&nbsp;&nbsp;
+            <button (click)=deleteMyTodo(todo.id)>Delete</button>
         </tr>
     </tbody>
   </table>

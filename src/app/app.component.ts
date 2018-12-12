@@ -18,4 +18,9 @@ export class AppComponent {
     var myTodo = this.service.getTodoById(id);
     console.log(myTodo)
   }
+  
+  deleteMyTodo(id: number){
+    var deleteMyTodo = this.service.deleteTodo(id);
+  }
+    
 }

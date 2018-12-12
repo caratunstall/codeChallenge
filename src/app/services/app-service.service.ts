@@ -17,8 +17,7 @@ export class AppService {
   }
 
   public getTodoById(id: number) {
-    //write you implementation here
-    return;
+    return this.todos.filter(x => x.id === id);
   }
 
   public deleteTodo(id: number) {

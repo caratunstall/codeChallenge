@@ -21,6 +21,9 @@ export class AppService {
   }
 
   public deleteTodo(id: number) {
-    //write you implementation here
+    for(var i=0; i<this.todos.length; i++){
+      if (id == this.todos[i].id)
+      return this.todos.splice(i, 1);
+      }
   }
 }
